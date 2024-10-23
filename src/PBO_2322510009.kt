@@ -66,6 +66,8 @@ class WarehouseManager {
 }
 
 fun main() {
+    val warehouseManager: WarehouseManager = WarehouseManager()
+
     val shopName: String
     val shippingAddress: String
     val buyerPhone: String
@@ -93,10 +95,8 @@ fun main() {
     print("Masukkan Jumlah Sparepart ke-2   : "); sparePartQty2 = readLine()!!.toInt()
     print("Masukkan Harga Sparepart ke-2    : "); sparePartPrice2 = readLine()!!.toInt()
 
-    val warehouseManager = WarehouseManager()
-
     // Print Title
-    warehouseManager.print("NOTA PEMBELIAN")
+    warehouseManager.print("NOTA PENGIRIMAN.....")
 
     // Print Shop Details
     warehouseManager.print(
